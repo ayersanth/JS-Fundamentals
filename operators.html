@@ -25,10 +25,13 @@
 		console.log(aString + " " + bString + " " + eString)
 
 		var intiger = 50;
+		var el = document.getElementById("math");
 
 		document.getElementById("button").click(function(){
-			document.getElementById("math") = intiger++;
-		})
+			intiger = intiger++;
+		});
+
+		el.textContent = intiger;
 
 		var a, b, c, d;
 
