@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+
+<body>
+
+	<button id="button">Click Here!</button>
+
+	<p id="math"></p>
+	
+	<script>
+		
+		var aString = "Hello";
+		var bString = "World";
+		var cString = 'Hi I\'m';
+		var dInt = 49;
+		// Even though we're combining a string with an intiger the intiger gets converted to a string to make it work. Avoid doing this.
+		var eString = cString + " " + dInt;
+		console.log(aString + " " + bString + " " + eString)
+
+		var intiger = 50;
+
+		document.getElementById("button").click(function(){
+			document.getElementById("math") = intiger++;
+		})
+
+		var a, b, c, d;
+
+		a = '"It is not the strongest of the species';
+		b = ' that survive,'
+		c = ' nor the most intelligent,'
+		d = ' but the one most responsive to change."'
+
+		console.log(a + b + c + d)
+
+	</script>	
+
+</body>
+
+</html>
