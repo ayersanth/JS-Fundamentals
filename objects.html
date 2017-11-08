@@ -5,6 +5,8 @@
 
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -12,7 +14,13 @@
 
 	<button id="button">Click Here!</button>
 
-	<p id="math"></p>
+	<p id="name"></p>
+
+	<script
+	  src="https://code.jquery.com/jquery-2.2.4.min.js"
+	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous">
+	</script>
 	
 	<script>
 		
@@ -20,7 +28,6 @@
 		console.log(window);
 
 		var myObj = {
-
 			name: "Anthony",
 			locations: {
 
@@ -29,22 +36,34 @@
 
 			},
 			age: 28,
-			doSomething: function(){
+			colour: "red",
+			whatever: "color"
 
-				console.log(myObj.age);
+			// doSomething: function(){
 
-			},
-			doSomethingElse: function(){
+			// 	console.log(myObj.age);
 
-				console.log(myObj.locations);
+			// },
+			// doSomethingElse: function(){
 
-			}
-			
+			// 	console.log(myObj.locations);
+
+			// }
 		};
 
-		console.log(myObj.doSomethingElse());
+		myObj.nationality = "English";
+		console.log(myObj);
+		
+
+		// this calls a css modifier (myObj.whatever = color: ;) then gives it a value (myObj.colour = red)
+		$("#button").css(myObj.whatever , myObj.colour);
+
+
+		// console.log(myObj.doSomethingElse());
 
 	</script>	
+
+
 
 </body>
 
